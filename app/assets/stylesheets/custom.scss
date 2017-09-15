@@ -5,6 +5,7 @@
 
 body {
   padding-top: 60px;
+  background-image: url("dog.jpg");
 }
 
 section {
@@ -52,6 +53,10 @@ p {
 
 /* header */
 
+.navbar-inverse {
+    background-color: #91154d;
+}
+
 #logo {
   float: left;
   margin-right: 10px;
@@ -68,17 +73,35 @@ p {
   text-decoration: none;
 }
 
-/* footer */
+.navbar-inverse .navbar-nav > li > a {
+    color: #7fff00;
+}
 
+.center {
+  text-align: center;
+  background: rgba(0, 255, 255, 0.3);
+}
+
+/* footer */
+/*
 footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
+}*/
+
+footer{
+position: fixed;
+left: 0; bottom: 0;
+padding: 10px;
+background: #91154d;
+width: 100%;
+border-top: 1px solid #eaeaea;
 }
 
 footer a {
-  color: #555;
+  color: #7fff00;
 }
 
 footer a:hover {
@@ -97,4 +120,9 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+
+footer h5{
+  float: left;
+  color:#000000;
 }
